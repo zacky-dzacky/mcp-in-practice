@@ -89,7 +89,16 @@ async def get_forecast(latitude: float, longitude: float) -> str:
 
     return "\n---\n".join(forecasts)
 
+@mcp.tool()
+async def get_random_joke() -> str:
+    """Get a random joke."""
+    url = "https://official-joke-api.appspot.com/random_joke"
+    data = await make_nws_request(url)
 
+    if not data:
+        return "Unable to fetch a joke at this time."
+
+    return f"{data['setup']} - {data['punchline']}"
 if __name__ == "__main__":
     print("MCP Server running...")
     # Initialize and run the server
