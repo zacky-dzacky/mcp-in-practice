@@ -8,11 +8,12 @@ from google.adk.artifacts.in_memory_artifact_service import (
     InMemoryArtifactService,  # Optional
 )
 from google.adk.runners import Runner
+import os
 from google.adk.sessions import InMemorySessionService
 from google.adk.tools.mcp_tool.mcp_toolset import (
-    MCPToolset,
-    SseServerParams,
+    MCPToolset
 )
+from google.adk.tools.mcp_tool.mcp_session_manager import SseServerParams
 from google.genai import types
 from rich import print
 load_dotenv()
@@ -21,7 +22,7 @@ async def get_tools_async():
     """Gets tools from the File System MCP Server."""
     tools, exit_stack = await MCPToolset.from_server(
         connection_params=SseServerParams(
-            url="http://localhost:8001/sse",
+            url="http://localhost:8002/sse",
         )
     )
     print("MCP Toolset created successfully.")

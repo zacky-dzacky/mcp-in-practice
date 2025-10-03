@@ -6,7 +6,8 @@
 ### MCP Server
 ### Ollama
 ### ADK
-
+### BeautifulSoup
+### Html2Text
 
 ## Installation
 ```
