@@ -17,5 +17,9 @@ uv add google-adk
 
 ## Run
 ```
+# How to run our server
+uv run mcp dev mcp_server.py
+
+# How to run our client
 uv run adk web
 ```
