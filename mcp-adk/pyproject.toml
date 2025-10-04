@@ -1,7 +1,7 @@
 [project]
-name = "dataset"
+name = "mcp-adk"
 version = "0.1.0"
-description = "Add your description here"
+description = "Skeleton project to connect MCP Server using ADK"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

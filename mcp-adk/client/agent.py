@@ -6,7 +6,6 @@ from google.adk.tools.mcp_tool.mcp_toolset import (
     StdioServerParameters,
 )
 from google.adk.tools.mcp_tool.mcp_session_manager import SseServerParams
-import asyncio
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -51,7 +50,7 @@ server = MCPToolset(
                 "mcp",
                 "mcp",
                 "run",
-                "dataset.py"
+                "server/mcp_server.py"
             ],
             env={
                 "HOME": "/Users/zackysyarief",
