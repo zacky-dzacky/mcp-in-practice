@@ -1,0 +1,5 @@
+mcp-adk/uv.lock
+mcp-adk/client/__pycache__/__init__.cpython-313.pyc
+mcp-adk/client/__pycache__/agent.cpython-313.pyc
+mcp-adk/server/__pycache__/mcp_server.cpython-313.pyc
+mcp-adk/.env
