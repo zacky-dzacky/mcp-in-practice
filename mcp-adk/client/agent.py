@@ -11,6 +11,7 @@ import os
 load_dotenv()
 
 def setup_mcp_server():
+    print("home: "+os.getenv("MCP_HOME"))
     server = MCPToolset(
         connection_params=StdioConnectionParams(
             server_params=StdioServerParameters(
@@ -21,7 +22,7 @@ def setup_mcp_server():
                     "mcp",
                     "mcp",
                     "run",
-                    "mcp_server.py"
+                    "server/mcp_server.py"
                 ],
                 env={
                     "HOME": os.getenv("MCP_HOME"),
