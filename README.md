@@ -12,6 +12,14 @@ MCP (Model Context Protocol) is an open-source standard for connecting AI applic
 ### BeautifulSoup
 ### Html2Text
 
+
+## [DRAFT] LlamaIndex
+### Embedding 
+```
+# Install LlamaIndex
+uv add llama-index-embeddings-ollama
+```
+
 ## Installation
 ```
 uv add "mcp[cli]"

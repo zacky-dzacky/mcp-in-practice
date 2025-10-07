@@ -10,5 +10,6 @@ dependencies = [
     "html2text>=2025.4.15",
     "httpx>=0.28.1",
     "litellm>=1.77.5",
+    "llama-index-embeddings-ollama>=0.8.3",
     "mcp[cli]>=1.15.0",
 ]
